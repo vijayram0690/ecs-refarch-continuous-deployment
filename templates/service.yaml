@@ -57,7 +57,7 @@ Resources:
             - -D
             - FOREGROUND
           Essential: true
-          Memory: 128
+          Memory: 1024
           MountPoints:
             - SourceVolume: my-vol
               ContainerPath: /var/www/my-vol
@@ -72,7 +72,7 @@ Resources:
             - sh
             - -c
           Essential: false
-          Memory: 128
+          Memory: 1024
           VolumesFrom:
             - SourceContainer: simple-app
           Command:
